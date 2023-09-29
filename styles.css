@@ -1,0 +1,77 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('loginbg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    opacity: 0.8;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+    backdrop-filter: blur(10px);
+}
+
+.logo img {
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.hotel-name {
+    color: #fff; 
+    font-size: 20px;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    padding: 20px;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-button {
+    display: block;
+    color: #fff; 
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+main {
+    width: 75%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    min-height: 500px; 
+}
