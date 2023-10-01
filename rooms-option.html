@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 5;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap; /* Wrap items to the next row when necessary */
+            justify-content: center; /* Center items horizontally */
+            align-items: center;
+            flex-grow: 1; /* Allow main to grow and take available vertical space */
+        }
+
+        .room-option {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px; /* Add some spacing around each room option */
+            width: 30%; /* Set a width for each room option */
+            background-color: white; /* Add a background color to each room option */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to each room option */
+        }
+
+        .room-option img {
+            width: 100%; /* Adjust the width to make the images very large */
+            height: auto;
+            max-width: none; /* Remove the max-width property */
+        }
+
+        .room-option button {
+            margin-top: 10px;
+            color: #333; /* Change text color to a dark color for better contrast */
+            background-color: #DEC09C; /* Add a background color to the buttons */
+            border: none; /* Remove the button border */
+            padding: 10px 20px; /* Add some padding to the buttons */
+            cursor: pointer; /* Change cursor style to pointer on hover */
+            transition: background-color 0.3s ease; /* Add a smooth background color transition */
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80px; 
+            height: auto; 
+        }
+
+        /* Style the button on hover */
+        .room-option button:hover {
+            background-color: #E1B09E; /* Change the background color on hover */
+        }
+    </style>
+    <title>Room Options</title>
+</head>
+<body>
+    <img class="logo" src="logo.jpg" alt="Logo" width="100" height="100">
+    <header>
+        <!-- Your header content here -->
+    </header>
+
+    <main>
+        <div class="room-option">
+            <img src="deluxe1.jpg" alt="Deluxe Room">
+            <button>Deluxe Room</button>
+        </div>
+
+        <div class="room-option">
+            <img src="luxury1.jpg" alt="Luxury Room">
+            <button>Luxury Room</button>
+        </div>
+
+        <div class="room-option" style="order: 2;"> <!-- Change order to move this to the second row -->
+            <img src="bussiness.jpeg" alt="Business Class Suite">
+            <button>Business Class Suite</button>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+</body>
+</html>

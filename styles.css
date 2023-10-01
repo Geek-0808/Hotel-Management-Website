@@ -4,8 +4,9 @@ body, ul {
 }
 
 body {
-    background-image: url('loginbg1.jpg');
-    background-size: cover;
+    /* background-image: url('loginbg3.jpg'); */
+    /* background-size: cover; */
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
@@ -57,7 +58,8 @@ ul {
     padding: 10px 20px;
     margin-bottom: 10px;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.2); 
+    background-color: #2B1605 ;
+     
     text-align: center;
 }
 
@@ -65,13 +67,77 @@ ul {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+button#deluxeButton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2B1605;
+    color: #fff;
+    border: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #DEC09C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.room-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .room-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .room-label {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #2B1605;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin: 5px;
+  }
+  
+  .room-radio:hover + label,
+        label:hover {
+            background-color: #2B1605; /* Change background color on hover */
+            color: #fff; /* Change text color on hover */
+            cursor: pointer; /* Change cursor to a pointer on hover */
+        }
+
+  .room-radio {
+    display: none;
+  }
+
+.room-radio:checked + .room-label {
+    background-color: #007bff;
+    color: #fff;
+}
 
 
 main {
-    width: 75%;
-    padding: 20px;
+    max-width: 1000px;
     margin: 20px auto;
+    padding: 20px;
     background-color: rgba(255, 255, 255, 0.2); 
     backdrop-filter: blur(10px); 
-    min-height: 500px; 
+    
 }
+
