@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+       
+        #reservation-container {
+            text-align: center; /* Center-align the form contents */
+        }
+    </style>
+</head>
+<body>
+    <h1>Reservation Form </h1>
+    <form action="process_booking.php" method="POST">
+        <!-- Personal Details -->
+        <h2>Personal Details</h2>
+        <label for="guestID">Guest ID:</label>
+        <input type="text" id="guestID" name="guestID" readonly>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="mobile">Mobile No.:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+        <br>
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+        <br>
+        <label for="purpose">Purpose of Visit:</label>
+        <input type="text" id="purpose" name="purpose">
+        <br>
+        <label for="member">Member:</label>
+        <input type="radio" id="memberYes" name="member" value="Yes">
+        <label for="memberYes">Yes</label>
+        <input type="radio" id="memberNo" name="member" value="No">
+        <label for="memberNo">No</label>
+        <br>
+        <label for="memberID">Member ID:</label>
+        <input type="text" id="memberID" name="memberID">
+        <br>
+        <label for="memberCardNo">Member Card No.:</label>
+        <input type="number" id="memberCardNo" name="memberCardNo">
+        <br>
+
+        <label for="nrooms">Number of rooms:</label>
+        
+        <input type="number" id="numAdults" name="numAdults">
+        
+        <br><br>
+        <label>Room Type:</label>
+        <br>
+        <label for="deluxe">Deluxe</label>
+        <input type="checkbox" id="deluxe" name="roomType[]" value="Deluxe">
+        
+        <label for="luxury">Luxury</label>
+        <input type="checkbox" id="luxury" name="roomType[]" value="Luxury">
+        
+        <label for="businessClass">Business Class</label>
+        <input type="checkbox" id="businessClass" name="roomType[]" value="Business Class">
+        <br><br>
+        
+
+        <label for="checkInTime">Check-In Time:</label>
+        <input type="text" id="checkInTime" name="checkInTime">
+        <br>
+        <label for="checkOutTime">Check-Out Time:</label>
+        <input type="text" id="checkOutTime" name="checkOutTime">
+        <br>
+        <label for="roomNumbers">Room Numbers:</label>
+        <input type="text" id="roomNumbers" name="roomNumbers">
+        <br>
+
+        <!-- Guest -->
+        <h2>Guest</h2>
+        <label for="numAdults">No. of Adults:</label>
+        <input type="number" id="numAdults" name="numAdults">
+        <br>
+        <label for="child">Child:</label>
+        <input type="number" id="child" name="child">
+        <label for="childAge">Age:</label>
+        <input type="number" id="childAge" name="childAge">
+        <br>
+
+        <!-- Additional Services -->
+        <h2>Additional Services</h2>
+        <label for="serviceType">Service Type:</label>
+        <select id="serviceType" name="serviceType">
+            <option value="Travel">Travel</option>
+            <option value="Food">Food</option>
+            <option value="Housekeeping">Housekeeping</option>
+        </select>
+        <br>
+        <!-- Travel Options -->
+        <div id="travelOptions">
+            <label>Type:</label>
+            <br>
+            <label for="pickUp">Pick-Up</label>
+            <input type="radio" id="pickUp" name="travelType" value="Pick-Up">
+            
+            <label for="dropOff">Drop-Off</label>
+            <input type="radio" id="dropOff" name="travelType" value="Drop-Off">
+
+            <br>
+            <label for="pickUpTime">Pick-Up Time:</label>
+            <input type="text" id="pickUpTime" name="pickUpTime">
+            <br>
+             
+            <label for="guestCount">Guest Count:</label>
+            <input type="number" id="guestCount" name="guestCount">
+        </div>
+        <!-- Parking Options -->
+        <div id="parkingOptions">
+            <label for="parkingNumber">Parking Number:</label>
+            <input type="text" id="parkingNumber" name="parkingNumber">
+            <br>
+            <label for="vehicleTypeParking">Vehicle Type:</label>
+            <input type="text" id="vehicleTypeParking" name="vehicleTypeParking">
+            <br>
+            <label for="vehicleNumberPlate">Vehicle Number Plate:</label>
+            <input type="text" id="vehicleNumberPlate" name="vehicleNumberPlate">
+        </div>
+        <!-- Food Options -->
+        <div id="foodOptions">
+            <!-- Include the options for breakfast, lunch, and dinner menus here -->
+        </div>
+        <!-- Housekeeping Options -->
+        <div id="housekeepingOptions">
+            <!-- Include the options for laundry and room cleaning here -->
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

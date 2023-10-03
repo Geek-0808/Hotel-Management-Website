@@ -1,8 +1,8 @@
 body, ul {
     margin: 0;
     padding: 0;
-}
 
+}
 body {
     /* background-image: url('loginbg3.jpg'); */
     /* background-size: cover; */
@@ -21,6 +21,86 @@ header {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
     backdrop-filter: blur(10px);
+
+    h1 {
+        text-align: right; /* Align the heading to the right */
+    }
+}
+
+
+/* Style the form container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 300px;
+}
+
+
+/* Style the form headings */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style the labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the select dropdown */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    padding-right: 20px;
+    background: url("dropdown-arrow.png") no-repeat right center;
+    background-size: 15px;
+}
+
+
+
+/* Example media query for smaller screens */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
 }
 
 .logo img {
@@ -44,7 +124,6 @@ nav {
     padding: 20px;
 }
 
-
 ul {
     list-style: none;
     margin: 0;
@@ -59,7 +138,7 @@ ul {
     margin-bottom: 10px;
     border-radius: 5px;
     background-color: #2B1605 ;
-     
+
     text-align: center;
 }
 
@@ -127,12 +206,13 @@ button {
   }
 
 .room-radio:checked + .room-label {
-    background-color: #007bff;
+    background-color: #DEC09C;
     color: #fff;
 }
 
 
 main {
+
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
