@@ -8,7 +8,7 @@
         body {
             margin: 5;
             padding: 0;
-            background-color: #f0f0f0;
+            /* background-color: #f; */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -20,8 +20,8 @@
             display: flex;
             flex-wrap: wrap; /* Wrap items to the next row when necessary */
             justify-content: center; /* Center items horizontally */
-            align-items: center;
-            flex-grow: 1; /* Allow main to grow and take available vertical space */
+            align-items: right;
+            flex-grow: 1; 
         }
 
         .room-option {
@@ -32,7 +32,7 @@
             margin: 20px; /* Add some spacing around each room option */
             width: 30%; /* Set a width for each room option */
             background-color: white; /* Add a background color to each room option */
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to each room option */
+            /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); Add a subtle shadow to each room option */
         }
 
         .room-option img {
@@ -68,8 +68,13 @@
             width: 50%;
             float: left; /* Float the container to the left to make it side by side */
         }
-    
+        
+        .room-option button a {
+            text-decoration: none; /* Remove the underline */
+            color: inherit; /* Inherit the color from the button's parent (black in this case) */
+        }
     </style>
+
     <title>Room Options</title>
 </head>
 <body>
@@ -81,19 +86,20 @@
     <main>
         <div class="room-option">
             <img src="deluxe1.jpg" alt="Deluxe Room">
-            <button>Deluxe Room</button>
+            <button><a href="deluxerooms.html">Deluxe Room</a></button>
         </div>
-
+    
         <div class="room-option">
             <img src="luxury1.jpg" alt="Luxury Room">
-            <button>Luxury Room</button>
+            <button><a href="luxuryrooms.html">Luxury Room</a></button>
         </div>
-
+    
         <div class="room-option" style="order: 2;"> <!-- Change order to move this to the second row -->
             <img src="bussiness.jpeg" alt="Business Class Suite">
-            <button>Business Class Suite</button>
+            <button><a href="businessclass.html">Business Class Suite</a></button>
         </div>
     </main>
+    
 
     <footer>
         <!-- Your footer content here -->

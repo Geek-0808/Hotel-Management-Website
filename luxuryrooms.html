@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luxury rooms</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .room-label {
+            text-align: center ; /* Center the text within labels */
+            margin: 5px 0; /* Equal margin above and below labels */
+        }
+
+        .room-checkbox {
+            display: block; /* Make checkboxes display as blocks for symmetry */
+            margin: 10px; /* Center checkboxes horizontally */
+        }
+
+        .room-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Arrange in 4 columns */
+            gap: 10px; /* Gap between grid items */
+            justify-content: center; /* Center the grid horizontally */
+        }
+
+        .luxury-heading {
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            font-size: 50px;
+            margin: 20px 0; /* Equal margin above and below the heading */
+        }
+
+        .button-container {
+            text-align: center; /* Center the button text */
+            margin-top: 30px; 
+        }
+
+        /* Add margin between buttons */
+        .button-container button {
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <main>
+        <h2 class="luxury-heading">Luxury Rooms</h2>
+
+        <div class="room-grid" id="roomList">
+            <div>
+                <input type="checkbox" id="room201" name="room" class="room-checkbox">
+                <label for="room201" class="room-label">201</label>
+            </div>
+            <div>
+                <input type="checkbox" id="room202" name="room" class="room-checkbox">
+                <label for="room202" class="room-label">202</label>
+            </div>
+            <div>
+                <input type="checkbox" id="room203" name="room" class="room-checkbox">
+                <label for="room203" class="room-label">203</label>
+            </div>
+            <div>
+                <input type="checkbox" id="room204" name="room" class="room-checkbox">
+                <label for="room204" class="room-label">204</label>
+            </div>
+            <div>
+                <input type="checkbox" id="room205" name="room" class="room-checkbox">
+                <label for="room205" class="room-label">205</label>
+            </div>
+            <div>
+                <input type="checkbox" id="room206" name="room" class="room-checkbox">
+                <label for="room206" class="room-label">206</label>
+            </div>
+          
+        </div>
+        <div class="button-container">
+            <button id="luxuryButton">Book Selected Rooms</button>
+        </div>
+    </main>
+</body>
+</html>

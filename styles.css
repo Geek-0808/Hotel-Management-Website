@@ -19,8 +19,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
-    backdrop-filter: blur(10px);
+    /* background-color: rgba(255, 255, 255, 0.2); Transparent background */
+    /* backdrop-filter: blur(10px); */
 
     h1 {
         text-align: right; /* Align the heading to the right */
@@ -99,7 +99,7 @@ select {
 /* Example media query for smaller screens */
 @media (max-width: 600px) {
     form {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -120,7 +120,7 @@ nav {
     justify-content: flex-end; 
     width: 25%;
     background-color: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(10px); 
+    /* backdrop-filter: blur(10px);  */
     padding: 20px;
 }
 
@@ -210,6 +210,42 @@ button {
     color: #fff;
 }
 
+/* Add these styles to your styles.css file */
+#businessButton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2B1605;
+    color: #fff;
+    border: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#luxuryButton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2B1605;
+    color: #fff;
+    border: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#businessButton:hover {
+    background-color: #DEC09C; /* Change the background color on hover */
+}
+
+#luxuryButton:hover {
+    background-color: #DEC09C; /* Change the background color on hover */
+}
+
+#deluxeButton:hover {
+    background-color: #DEC09C; /* Change the background color on hover */
+}
 
 main {
 
@@ -217,7 +253,7 @@ main {
     margin: 20px auto;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(10px); 
+    /* backdrop-filter: blur(10px);  */
     
 }
 
